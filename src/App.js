@@ -8,6 +8,7 @@ import black from "./black.png";
 import green from "./green.png";
 import Toggle from "./components/Toggle";
 import Inc from "./components/Inc";
+import { Mount } from "./components/Mount";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         {/* Testing my hooks */}
         <Toggle />
         <Inc />
+        <Mount />
 
 
         
