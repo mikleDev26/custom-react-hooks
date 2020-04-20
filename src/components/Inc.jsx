@@ -2,17 +2,20 @@ import React from 'react';
 import useInc from '../hooks/useInc';
 
 const Inc = () => {
-const [value, { dec, inc }] = useInc(0);
+const [volume, { dec, inc, reset }] = useInc({
+  maxValue: 10,
+  minValue: 0,
+  initialValue: 10,
+  step: 3,
+}); 
 
   return (
     <div>
-      <button
-      onClick={dec}
-      >-</button>
-      <h3>{value}</h3>
-      <button
-      onClick={inc}
-      >+</button>
+      <h3>Volume</h3>
+      <button onClick={dec}>-</button>
+      <h3>{volume}</h3>
+      <button onClick={inc}>+</button>
+      <button onClick={reset}>reset</button>
     </div>
   );
 };
