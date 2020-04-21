@@ -12,6 +12,7 @@ import { Mount } from "./components/Mount";
 import Hover from "./components/Hover";
 import { PageProvider } from './state';
 import Nav from './components/Nav';
+import Cookie from "./components/Cookie";
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
           <Inc />
           <Mount />
           <Hover />
-
+          <Cookie />
 
           <CardGrid>
             <Card style={{ background: "var(--purp)" }}>

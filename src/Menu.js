@@ -1,9 +1,9 @@
 import React from 'react';
-import { useAppContext } from './state';
+import { useAppState } from './state';
 
 const Menu = () => {
   
-  const { toggleMenu } = useAppContext();
+  const { toggleMenu } = useAppState();
 
   return (
     <button onClick={toggleMenu}>  
