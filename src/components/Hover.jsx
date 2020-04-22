@@ -12,9 +12,6 @@ const Hover = () => {
     return null;
   }
 
-  console.log('Hovered', isHovered);
-  console.log('Widht', width);
-
   return (
     <div>
      <Card {...bind} style={{ background: "var(--black)" }}>
