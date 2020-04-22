@@ -1,13 +1,19 @@
 import React from 'react';
 import { Card } from '../Elements';
 import black from "../black.png";
-import useHover from '../hooks/useHover';
+import { useHover, useWindowWidth } from '../hooks';
 
 const Hover = () => {
 
   const [isHovered, bind] = useHover();
+  const width = useWindowWidth();
+
+  if (width < 400) {
+    return null;
+  }
 
   console.log('Hovered', isHovered);
+  console.log('Widht', width);
 
   return (
     <div>

@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 
 
-const useHover = () => {
+export const useHover = () => {
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -14,5 +14,3 @@ const useHover = () => {
 
   return [ isHovered, bind ];
 };
-
-export default useHover;
